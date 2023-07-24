@@ -39,7 +39,7 @@ class UserController extends Controller
                 ->put('role', $user->role);
 
                 if (Session::get('role') == 'admin'){
-                    return redirect('/admin')
+                    return redirect('/admin-UserOrders')
                     ->with('success', 'Logged in as admin.');
                 }
                 return redirect('/profile')->with('success', 'Hi there, ' . Session::get('first_name') . '!');
