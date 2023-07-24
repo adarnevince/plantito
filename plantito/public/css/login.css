@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Jost", sans-serif;
+    background: linear-gradient(to bottom, #15d40094, #22df00b6, #0087129a);
+}
+.main {
+    width: 350px;
+    height: 510px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 5px 35px #000000a4;
+}
+#chk {
+    display: none;
+}
+.login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+}
+.labelone {
+    color: #fff;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.regForm {
+    width: 80%;
+    margin-left: 35px;
+}
+
+.formLabel {
+    margin-left: 35px;
+    font-size: 12px;
+}
+
+button {
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #5ace24;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+button:hover {
+    background: green;
+}
+.signup {
+    height: 550px;
+    background: rgb(0, 84, 0);
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: 0.6s ease-in-out;
+}
+
+#chk:checked ~ .signup {
+    transform: translateY(-600px);
+}
+#chk:checked ~ .signup #aReg {
+    transform: scale(0.9);
+}
+#chk:checked ~ .login label {
+    transform: scale(0);
+}
+
+#aReg {
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    transform: scale(0.6);
+    font-size: 25px;
+}
+
+#login {
+    color: black;
+    margin-bottom: 15px;
+}
+
+small {
+    display: flex;
+    justify-content: center;
+}
+
+/* div {
+    border: 1px solid blue;
+} */
